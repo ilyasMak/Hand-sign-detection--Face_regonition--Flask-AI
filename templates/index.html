@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="{{url_for('static',filename='images/log.png')}}"  type="image/x-icon">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon"   href="{{url_for('static',filename='images/favicon.png')}}"  type="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <title> AI - Reconnaisance faciale </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link  href="{{url_for('static',filename='css/font-awesome.min.css')}}"  rel="stylesheet" />
+ 
+  <!-- Custom styles for this template -->
+  <link   href="{{url_for('static',filename='css/style.css')}}"   rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link   href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="{{url_for('static',filename='images/hero-bg.png')}}" alt="">
+        
+  
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="#">
+            <span>
+             AhmedIlyas
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/fc"> Reconnaisance faciale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/handSign">Détection des signes manuels</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#About">Á propos de projet</a>
+              </li>
+             
+            
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      AI <br>
+                      La reconnaissance faciale
+                    </h1>
+                    <p>
+                      La reconnaissance faciale par l'intelligence artificielle révolutionne l'identification et l'authentification des individus. Grâce à des algorithmes d'IA avancés, notre système analyse les visages avec précision et efficacité, ouvrant la voie à de nombreuses possibilités. De l'amélioration de la sécurité à la personnalisation de l'expérience utilisateur, notre technologie redéfinit les normes. Que ce soit pour le contrôle d'accès en entreprise ou la vérification des utilisateurs en ligne, notre solution offre une nouvelle ère de sécurité et de vérification d'identité.    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Savoir plus
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{{url_for('static',filename='images/face_rec.png')}}"  alt="">
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      AI <br>
+                      La détection des signes manuels
+                    </h1>
+                    <p>
+                      La détection des signes manuels par l'intelligence artificielle révolutionne notre interaction avec la technologie. Notre système, utilisant des techniques avancées d'IA, reconnaît et interprète avec précision les gestes des mains en temps réel. De la communication pour les malentendants au contrôle intuitif dans la réalité virtuelle, notre technologie offre des expériences immersives et inclusives.      <div class="btn-box">
+                      <a href="" class="btn1">
+                        Savoir plus
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{{url_for('static',filename='images/detec_Main.png')}}"  alt="">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+        
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!----*********************************************************-->
+  
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center" id="fc">
+          <h2>
+            La reconnaissance <span>faciale </span>
+          </h2>
+          <p>
+            Mon code de reconnaissance faciale, utilisant la bibliothèque face_recognition, permet une détection rapide et précise des visages dans les images ou les flux vidéo. Cette solution offre des résultats fiables en temps réel et trouve des applications dans divers domaines tels que le contrôle d'accès, la surveillance et les expériences utilisateur personnalisées. Grâce à son intégration fluide et ses performances élevées, il représente une solution de pointe dans le domaine de la technologie d'identification basée sur l'IA.     </div>
+        <div class="row">
+          <div class="col-lg-4" >
+            <div class="box ">
+              <div class="img-box">
+                <img src="{{url_for('static',filename='images/fc.png')}}"  alt="">
+              
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Identifier avec facilité
+                </h5>
+                <p>
+                  Essayez notre fonctionnalité de reconnaissance faciale dès maintenant ! Expérience fluide et précise. Sécurité améliorée. Expériences personnalisées. Rejoignez-nous pour façonner l'avenir de l'IA !     </p>
+               <a href="">
+                plus de détails
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 ">
+            <div class="box ">
+              <div class="embed-responsive embed-responsive-16by9">
+                <!-- Insérer votre lien vidéo ici -->
+                <img class="embed-responsive-item" src="{{ url_for('video_feed') }}" alt="Vidéo">
+            </div>
+           
+            </div>
+          </div>
+       </div>
+    
+    </div>
+</div>
+  </section>
+
+
+  <!--***********************************************************-->
+  
+
+
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center" id="About">
+        <h2>
+          Á propos de <span>projet (PFA)</span>
+        </h2>
+        <p>
+         Projet de fin d'année , Génie informatique , École nationale des sciences appliquées de fes
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src=  "{{url_for('static',filename='images/apropFace.png')}}"  alt="">
+          
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+               ILYAS MAKHLOUL - AHMED BOURAZZA
+            </h3>
+            <p>
+              Après avoir parcouru tout le processus de développement de notre projet de reconnaissance faciale, nous arrivons à une conclusion enrichissante. 
+            </p>
+            <p>
+              Ce projet a représenté bien plus qu'une simple exploration des technologies de l'intelligence artificielle et du développement web ; il a été une immersion complète dans un domaine en constante évolution, où la théorie rencontre la pratique de manière tangible.   </p>
+            <a href="">
+              Plus de détail
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+
+
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding" id="team">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Les <span> contributeurs</span>
+        </h2>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="box">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="img-box">
+                            <img src="{{url_for('static',filename='images/ilyas.jpeg')}}" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                          <h5>
+                              ILYAS MAKHLOUL
+                          </h5>
+                          <p>
+                              Etudiant ingénieur
+                          </p>
+                      </div>
+                      <div class="social_box">
+                 
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="portfolio">
+                          <i class="fa fa-folder-open" aria-hidden="true"></i> <!-- Utilisation d'une autre classe d'icône pour représenter un portfolio -->
+                      </a>
+                      <a href="https://ilyasmak.github.io/I/LYA/S.html">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </a>
+                      
+                    
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                      <p style="text-align: justify; ">  Participer à ce projet d'IA sur la détection des signes manuels et la reconnaissance faciale a été passionnant. En équipe, j'ai exploré le monde complexe du machine learning. Chaque étape a été une opportunité d'apprentissage, enrichissant mes compétences et ma compréhension des technologies de pointe. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="box">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="img-box">
+                            <img src="{{url_for('static',filename='images/ahmed.jpg')}}" class="img1" alt="">
+                        </div>
+                        <div class="detail-box">
+                          <h5>
+                              AHMED BOURAZZA
+                          </h5>
+                          <p>
+                              Etudiant Ingénieur
+                          </p>
+                      </div>
+                      <div class="social_box">
+                 
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="portfolio">
+                          <i class="fa fa-folder-open" aria-hidden="true"></i> <!-- Utilisation d'une autre classe d'icône pour représenter un portfolio -->
+                      </a>
+                      <a href="portfolio">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </a>
+                      
+                    
+                    </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                 <p style="text-align: justify;">  Ce projet a été mon introduction à l'IA et au machine learning. En équipe, nous avons travaillé sur la détection des signes manuels et la reconnaissance faciale, ce qui m'a apporté une expérience pratique précieuse. J'ai utilisé Python avec TensorFlow et OpenCV pour créer des solutions innovantes, renforçant ainsi mes compétences en développement logiciel. J'ai hâte de continuer à explorer ce domaine fascinant. </p>
+          
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+       
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          La <span>Bibliographie</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+
+          <div class="item">
+            <div class="box">
+             
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      documentation de face recognition
+                    </h6>
+                    <p>
+                      site web
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  <a href="https://face-recognition.readthedocs.io/en/latest/readme.html">
+                    https://face-recognition.readthedocs.io/en/latest/readme.html</a> </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="item">
+            <div class="box">
+             
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      FORMATION PYTHON
+                    </h6>
+                    <p>
+                      MACHINE LEARNING sur la chaine Machine Learnia [en ligne]
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=82KLS2C_gNQ&list=PLO_fdPEVlfKqMDNmCFzQISI2H_nJcEDJq">
+                    https://www.youtube.com/watch?v=82KLS2C_gNQ&list=PLO_fdPEVlfKqMDNmCFzQISI2H_nJcEDJq</a> </p>
+              </div>
+            </div>
+          </div>
+
+
+        
+          <div class="item">
+            <div class="box">
+             
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      FORMATION DEEP LEARNING COMPLETE 
+                    </h6>
+                    <p>
+                      la chaine Machine Learnia [en ligne]
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  <a href="https://www.youtube.com/watch?v=XUFLq6dKQok">
+                    https://www.youtube.com/watch?v=XUFLq6dKQok</a> </p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="item">
+            <div class="box">
+             
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      documentation du Flask
+                    </h6>
+                    <p>
+                      site web
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  <a href="https://flask.palletsprojects.com/en/3.0.x/">
+                    https://flask.palletsprojects.com/en/3.0.x/</a> </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="box">
+             
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      documentation Mediapipe
+                    </h6>
+                    <p>
+                     site web 
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  <a href="https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer">
+                    https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer</a> </p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Fés , Maroc
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+               ILYAS +212 619 70 61 44 <br>
+                </span> 
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                 AHMED +212 682 41 39 13
+                  </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  makhloul.ilyas@usmba.ac.ma
+                </span>
+              
+                <span>
+                  ahmed.bourazza@usmba.ac.ma
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+           
+           
+            <a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Ce projet a pour objectif d'explorer les outils d'intelligence artificielle et leurs bibliothèques, en se concentrant sur le célèbre langage de programmation Python,et son framework flask </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+             Les Liens
+            </h4>
+            <div class="info_links">
+              <a class="active" href="#">
+                Accueil
+              </a>
+              <a class="" href="#fc">
+                Reconnaisance Facial
+              </a>
+              <a class="" href="/handSign">
+                Détection des signes
+              </a>
+              <a class="" href="#About">
+                à propos de projet (PFA)
+              </a>
+              <a class="" href="#team">
+                Les contributeurs
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> Tous les drois réservés par
+        <a href="https://ilyasmak.github.io/I/LYA/S.html">Ilyas et Ahmed</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src= "{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+ 
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src= "{{url_for('static',filename='js/bootstrap.js')}}"></script>
+ 
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src= "{{url_for('static',filename='js/custom.js')}}"></script>
+ 
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
+
+   
